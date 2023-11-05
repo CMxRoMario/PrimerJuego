@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - piso
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2169345527
+    locked: 0
+  - name: BackDeco
+    uniqueID: 332968855
+    locked: 0
+  - name: Entidades
+    uniqueID: 4183882633
+    locked: 0
+  - name: FrontDeco
+    uniqueID: 2825580017
+    locked: 0
+  - name: Foreground
+    uniqueID: 1446528129
     locked: 0
