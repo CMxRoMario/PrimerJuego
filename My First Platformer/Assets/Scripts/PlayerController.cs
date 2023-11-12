@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Animator animator;
     public float velocidad;
     public float fuerzaDeSalto;
     public LayerMask mascaraDePiso;
@@ -28,7 +29,6 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector2.up * fuerzaDeSalto, ForceMode2D.Impulse);
         }
-
     }
 
     private void Correr()
@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
         RaycastHit2D centro = Physics2D.Raycast(col.bounds.center, Vector2.down, col.bounds.extents.y + 0.1f, mascaraDePiso);
 
         return centro.collider != null;
+
     }
 
 }
