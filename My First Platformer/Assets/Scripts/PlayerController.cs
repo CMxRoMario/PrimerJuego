@@ -50,5 +50,6 @@ public class PlayerController : MonoBehaviour
         return centro.collider != null;
 
     }
+    
 
 }

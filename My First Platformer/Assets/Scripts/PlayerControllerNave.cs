@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControllerNave : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerControllerNave : MonoBehaviour
     public int lifes = 10;
     public Transform mainCamera;
     private float lastShoot;
+    public string gameover;
 
     void Update()
     {
@@ -49,6 +51,14 @@ public class PlayerControllerNave : MonoBehaviour
     public void Hit()
     {
         lifes = lifes -1;
-        if (lifes == 0) Destroy(gameObject);
+        if (lifes == 0)
+        {
+            Destroy(gameObject);
+            gameOver();
+        }
+    }
+    public void gameOver()
+    {
+        SceneManager.LoadScene(gameover);
     }
 }

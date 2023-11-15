@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class EnemyController : MonoBehaviour
@@ -11,6 +12,7 @@ public class EnemyController : MonoBehaviour
     public float descendTime = 1f;
     public float ascendTime = 1f;
     private float lastShoot;
+    public string victoria;
     
     public Transform mainCamera;
 
@@ -62,8 +64,18 @@ public class EnemyController : MonoBehaviour
     public void Hit()
     {
         lifes = lifes -1;
-        if (lifes == 0) Destroy(gameObject);
+        if (lifes == 0) 
+        {
+            Destroy(gameObject);
+            Victoria();
+        }
     }
+
+    public void Victoria()
+    {
+        SceneManager.LoadScene(victoria);
+    }
+    
 
 
     void Descend()

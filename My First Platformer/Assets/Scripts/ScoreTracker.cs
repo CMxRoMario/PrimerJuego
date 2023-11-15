@@ -8,6 +8,7 @@ public class ScoreTracker : MonoBehaviour
     public static ScoreTracker instance;
     [SerializeField] private int score;
     [SerializeField] private int lifes;
+    public string gameover;
 
     // Start is called before the first frame update
     void Awake()
@@ -32,6 +33,8 @@ public class ScoreTracker : MonoBehaviour
 
     public int getRemainingLifes() { return lifes; }
 
+    
+
     public void loseLife(int amount = 1)
     {
         lifes -= amount;
@@ -44,6 +47,7 @@ public class ScoreTracker : MonoBehaviour
 
     public void gameOver ()
     {
-        SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene(gameover);
     }
+
 }

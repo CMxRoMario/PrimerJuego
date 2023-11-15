@@ -1882,6 +1882,7 @@ MonoBehaviour:
   speed: 5
   lifes: 10
   mainCamera: {fileID: 408981909}
+  gameover: GameOver
 --- !u!70 &529451125
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6301,6 +6302,7 @@ MonoBehaviour:
   moveSpeed: 5
   descendTime: 1
   ascendTime: 1
+  victoria: Victoria
   mainCamera: {fileID: 408981909}
 --- !u!61 &1229646409
 BoxCollider2D:
@@ -6899,6 +6901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   lifes: 5
+  gameover: GameOver
   uiPuntaje: {fileID: 1301924929}
 --- !u!4 &1477705348
 Transform:
