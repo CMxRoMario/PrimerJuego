@@ -6,17 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class InicioScreen : MonoBehaviour
 {
+    public string scene1;
     
-    public string jugar;
-
-    public void Setup()
+    public void OnClick()
     {
-        gameObject.SetActive(true);
-    }
-
-    public void Jugar()
-    {
-        SceneManager.LoadScene(jugar);
+        SceneManager.LoadScene(scene1);
     }
     
 }

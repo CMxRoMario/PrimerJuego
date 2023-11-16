@@ -155,10 +155,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1783984739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 21, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.38500002, y: 0}
+  m_AnchorMax: {x: 0.74, y: 1}
+  m_AnchoredPosition: {x: 8.5, y: 0}
+  m_SizeDelta: {x: 129, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &142288844
 MonoBehaviour:
@@ -537,6 +537,7 @@ GameObject:
   - component: {fileID: 825296963}
   - component: {fileID: 825296962}
   - component: {fileID: 825296961}
+  - component: {fileID: 825296965}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -627,6 +628,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &825296965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825296960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c965cee2c4e944c4d9b7d0b2bd357498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene1: Scene1
 --- !u!1 &1383825881
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,9 +816,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1942311273}
+      - m_Target: {fileID: 825296965}
         m_TargetAssemblyTypeName: InicioScreen, Assembly-CSharp
-        m_MethodName: Jugar
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -863,7 +877,6 @@ GameObject:
   - component: {fileID: 1942311272}
   - component: {fileID: 1942311275}
   - component: {fileID: 1942311274}
-  - component: {fileID: 1942311273}
   m_Layer: 5
   m_Name: Inicio
   m_TagString: Untagged
@@ -893,19 +906,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1942311273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942311271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c965cee2c4e944c4d9b7d0b2bd357498, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jugar: Scene1
 --- !u!114 &1942311274
 MonoBehaviour:
   m_ObjectHideFlags: 0

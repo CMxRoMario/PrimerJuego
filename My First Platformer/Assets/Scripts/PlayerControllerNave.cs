@@ -37,6 +37,8 @@ public class PlayerControllerNave : MonoBehaviour
             Shoot();
             lastShoot = Time.time;
         }
+        
+        uiVidasJg.text = lifes.ToString();
     }
 
     private void Shoot()
@@ -61,4 +63,9 @@ public class PlayerControllerNave : MonoBehaviour
     {
         SceneManager.LoadScene(gameover);
     }
+    
+	public TMPro.TextMeshProUGUI uiVidasJg;
+
+
+    public int getRemainingLifes() { return lifes; }
 }

@@ -51,6 +51,8 @@ public class EnemyController : MonoBehaviour
             Shoot();
             lastShoot = Time.time;
         }
+        
+        uiVidasRv.text = lifes.ToString();
     }
 
     private void Shoot()
@@ -92,5 +94,10 @@ public class EnemyController : MonoBehaviour
     {
         isDescending = !isDescending;
     }
+    
+	public TMPro.TextMeshProUGUI uiVidasRv;
+
+
+    public int getRemainingLifes() { return lifes; }
     
 }

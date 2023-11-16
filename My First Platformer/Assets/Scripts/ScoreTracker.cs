@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ScoreTracker : MonoBehaviour
 {
     public static ScoreTracker instance;
-    [SerializeField] private int score;
+    public int score;
     [SerializeField] private int lifes;
     public string gameover;
 
@@ -21,6 +21,8 @@ public class ScoreTracker : MonoBehaviour
     private void Update()
     {
         uiPuntaje.text = score.ToString();
+        
+        uiVidas.text = lifes.ToString();
     }
 
 
@@ -30,10 +32,9 @@ public class ScoreTracker : MonoBehaviour
     
 	public TMPro.TextMeshProUGUI uiPuntaje;
 
+	public TMPro.TextMeshProUGUI uiVidas;
 
     public int getRemainingLifes() { return lifes; }
-
-    
 
     public void loseLife(int amount = 1)
     {
